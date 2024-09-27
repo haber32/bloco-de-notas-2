@@ -1,0 +1,264 @@
+@font-face {
+    font-family: 'sourcesanspro';
+    font-style: italic;
+    font-weight: 400;
+    font-display: block;
+    src: url(https://design.penpot.app/fonts/sourcesanspro-italic.woff) format('woff');
+  }
+
+html, body {
+  margin: 0;
+  min-height: 100%;
+  min-width: 100%;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.text-node { background-clip: text !important; -webkit-background-clip: text !important; }
+
+/* PAGINA 1 */
+.pagina-1-04cdff0e528f {
+  position: relative;
+  width: 390px;
+  height: 844px;
+  background: rgba(178, 178, 178, 0.3);
+  overflow: hidden;
+  z-index: 0;
+}
+
+/* Board */
+.board-04e15ea8d308 {
+  position: absolute;
+  left: 95px;
+  top: 80px;
+  width: 159px;
+  height: 45px;
+  background: rgba(178, 178, 178, 0.29);
+  border: 1px solid #AB199C;
+  overflow: hidden;
+}
+
+/* BEM VINDE! */
+.bem-vinde-06e2b3886cc4 {
+  position: absolute;
+  left: 23px;
+  top: 8px;
+  width: 114px;
+  height: 29px;
+}
+.bem-vinde-06e2b3886cc4 .root-0 {
+  
+  
+  display: flex;
+  white-space: break-spaces;
+  align-items: flex-start;
+}
+.bem-vinde-06e2b3886cc4 .root-0-paragraph-set-0 {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: inherit;
+  
+  margin-right: 1px;
+  vertical-align: top;
+}
+.bem-vinde-06e2b3886cc4 .root-0-paragraph-set-0-paragraph-0 {
+  font-size: 0;
+  line-height: 1.2;
+  margin: 0;
+  text-align: left;
+}
+.bem-vinde-06e2b3886cc4 .root-0-paragraph-set-0-paragraph-0-text-0 {
+  color: rgba(149, 134, 134, 1);
+  text-transform: none;
+  
+  line-break: auto;
+  overflow-wrap: initial;
+  white-space: pre;
+  text-rendering: geometricPrecision;
+  caret-color: rgba(149, 134, 134, 1);
+  text-decoration: none;
+  letter-spacing: 0px;
+  font-size: 24px;
+  font-family: "sourcesanspro";
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* Board */
+.board-04de713b35a2 {
+  position: absolute;
+  left: 426.5px;
+  top: 653px;
+  width: 329px;
+  height: 70px;
+  background: #FFFFFF;
+  overflow: hidden;
+}
+
+/* Board */
+.board-04de786be8a7 {
+  position: absolute;
+  left: 41px;
+  top: 705px;
+  width: 329px;
+  height: 70px;
+  background: #DA40CB;
+  overflow: hidden;
+}
+
+/* CADASTRAR */
+.cadastrar-06e1e54205a8 {
+  position: absolute;
+  left: 103px;
+  top: 20px;
+  width: 125px;
+  height: 31px;
+}
+.cadastrar-06e1e54205a8 .root-0 {
+  
+  
+  display: flex;
+  white-space: break-spaces;
+  align-items: flex-start;
+}
+.cadastrar-06e1e54205a8 .root-0-paragraph-set-0 {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: inherit;
+  min-width: 100%;
+  margin-right: 1px;
+  vertical-align: top;
+}
+.cadastrar-06e1e54205a8 .root-0-paragraph-set-0-paragraph-0 {
+  font-size: 0;
+  line-height: 1.2;
+  margin: 0;
+  text-align: left;
+}
+.cadastrar-06e1e54205a8 .root-0-paragraph-set-0-paragraph-0-text-0 {
+  color: rgba(255, 255, 255, 1);
+  text-transform: none;
+  
+  line-break: auto;
+  overflow-wrap: initial;
+  white-space: break-spaces;
+  text-rendering: geometricPrecision;
+  caret-color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+  letter-spacing: 0px;
+  font-size: 24px;
+  font-family: "sourcesanspro";
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* Board */
+.board-04d08560e030 {
+  position: absolute;
+  left: 41px;
+  top: 594px;
+  width: 329px;
+  height: 70px;
+  background: #F09916;
+  overflow: hidden;
+}
+
+/* ENTER */
+.enter-06e19381b816 {
+  position: absolute;
+  left: 126px;
+  top: 24px;
+  width: 77px;
+  height: 23px;
+}
+.enter-06e19381b816 .root-0 {
+  
+  
+  display: flex;
+  white-space: break-spaces;
+  align-items: flex-start;
+}
+.enter-06e19381b816 .root-0-paragraph-set-0 {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: inherit;
+  min-width: 100%;
+  margin-right: 1px;
+  vertical-align: top;
+}
+.enter-06e19381b816 .root-0-paragraph-set-0-paragraph-0 {
+  font-size: 0;
+  line-height: 1.2;
+  margin: 0;
+  text-align: left;
+}
+.enter-06e19381b816 .root-0-paragraph-set-0-paragraph-0-text-0 {
+  color: rgba(255, 255, 255, 1);
+  text-transform: none;
+  
+  line-break: auto;
+  overflow-wrap: initial;
+  white-space: break-spaces;
+  text-rendering: geometricPrecision;
+  caret-color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+  letter-spacing: 0px;
+  font-size: 24px;
+  font-family: "sourcesanspro";
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* TATTOO */
+.tattoo-04cf9b23763b {
+  position: absolute;
+  left: 22px;
+  top: 163px;
+  width: 369px;
+  height: 369px;
+  background: url(https://design.penpot.app/assets/by-file-media-id/c04641ea-355e-80b8-8005-04cf98e7c765) no-repeat center center / cover;
+  border-radius: 0px;
+}
+html, body {
+    margin: 0;
+    min-height: 100%;
+    min-width: 100%;
+    padding: 0;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .text-node { background-clip: text !important; -webkit-background-clip: text !important; }
+  
+  /* 2 (1) */
+  .c-2-1-070b2be2aa6a {
+    position: relative;
+    width: 393px;
+    height: 852px;
+    background: #FFFFFF;
+    overflow: hidden;
+    z-index: 0;
+  }
+  
+ 
