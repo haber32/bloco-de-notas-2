@@ -27,8 +27,8 @@ body {
 
 .text-node { background-clip: text !important; -webkit-background-clip: text !important; }
 
-/* PAGINA 1 */
-.pagina-1-04cdff0e528f {
+/* Keyboard - iPhone-1 */
+.keyboard-04cdff0e528f {
   position: relative;
   width: 390px;
   height: 844px;
@@ -164,6 +164,17 @@ body {
 }
 
 /* Board */
+.board-04e00ced8655 {
+  position: absolute;
+  left: 420px;
+  top: 594px;
+  width: 329px;
+  height: 70px;
+  background: #FFFFFF;
+  overflow: hidden;
+}
+
+/* Board */
 .board-04d08560e030 {
   position: absolute;
   left: 41px;
@@ -230,35 +241,66 @@ body {
   background: url(https://design.penpot.app/assets/by-file-media-id/c04641ea-355e-80b8-8005-04cf98e7c765) no-repeat center center / cover;
   border-radius: 0px;
 }
-html, body {
+ /* Estilos da página de login */
+
+ 
+ #loginPage {
     margin: 0;
     min-height: 100%;
-    min-width: 100%;
+    min-width: 57%;
     padding: 0;
-  }
-  
-  body {
+    height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    width: 100vw;
-    min-height: 100vh;
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
-  
-  .text-node { background-clip: text !important; -webkit-background-clip: text !important; }
-  
-  /* 2 (1) */
-  .c-2-1-070b2be2aa6a {
-    position: relative;
-    width: 393px;
-    height: 852px;
-    background: #FFFFFF;
-    overflow: hidden;
-    z-index: 0;
-  }
-  
+    background-color: rgb(235, 226, 226);;
+}
+#loginPage input {
+    padding: 10px;
+    margin: 10px;
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+.btn-login {
+    background-color: #ff69b4;
+    color: #ff7f50;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Estilos da página de Cadastrar */
+
  
+#loginPage {
+    margin: 0;
+    min-height: 100%;
+    min-width: 57%;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(235, 226, 226);;
+}
+#loginPage input {
+    padding: 10px;
+    margin: 10px;
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+.btn-login {
+    background-color: #f369e1;
+    color: #ff7f50;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
