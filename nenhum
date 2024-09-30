@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App de Blocos de Notas e Leads</title>
+    <style>
+        /* Estilos gerais */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        #home, #loginPage, #dashboard, #createNote, #profilePage, #leadPage {
+            display: none;
+        }
+
+    
+      
+        /* Estilos da página de login */
+        #loginPage {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff5ee;
+        }
+        #loginPage input {
+            padding: 10px;
+            margin: 10px;
+            width: 80%;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        .btn-login {
+            background-color: #ff69b4;
+            color: #ff7f50;
+            padding: 10px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        /* Estilos do Dashboard */
+        #dashboard {
+            background-color: #fff;
+            height: 100vh;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #dashboard h2 {
+            margin-bottom: 20px;
+        }
+        .folder {
+            background-color: #ffebcd;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 10px;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        /* Estilos da Criação de Notas */
+        #createNote {
+            background-color: #fff;
+            height: 100vh;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #noteInput {
+            width: 80%;
+            height: 100px;
+            margin-bottom: 20px;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        /* Estilos do Perfil */
+        #profilePage {
+            background-color: #fff;
+            height: 100vh;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #profilePage img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        /* Estilos da página de Leads */
+        #leadPage {
+            background-color: #fff;
+            height: 100vh;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #leadTable {
+            width: 80%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        #leadTable th, #leadTable td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        /* Estilos da barra de navegação inferior */
+        .nav-bar {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            background-color: #333;
+            padding: 10px 0;
+        }
+        .nav-bar button {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .nav-bar button:hover {
+            color: #ff69b4;
+        }
+    </style>
+</head>
+<body>
+
+   
+
+    <!-- Página de Login -->
+    <div id="loginPage">
+        <h2>Login</h2>
+        <input type="email" id="email" placeholder="Digite seu email">
+        <input type="password" id="password" placeholder="Digite sua senha">
+        <button class="btn-login" onclick="login()">Entrar</button>
+    </div>
+
+    <!-- Dashboard -->
+    <div id="dashboard">
+        <h2>Minhas Pastas</h2>
+        <div class="folder" onclick="openNoteBlock('Bloco de Notas 1')">Bloco de Notas 1</div>
+        <div class="folder" onclick="openNoteBlock('Bloco de Notas 2')">Bloco de Notas 2</div>
+        <div class="folder" onclick="openNoteBlock('Bloco de Notas 3')">Bloco de Notas 3</div>
+        <button class="btn-primary" onclick="showPage('leadPage')">Gerenciar Leads</button>
+    </div>
+
+    <!-- Página de Criação de Notas -->
+    <div id="createNote">
+        <h2>Criar Novo Bloco de Notas</h2>
+        <textarea id="noteInput" placeholder="Digite sua nota aqui..."></textarea>
+        <button class="btn btn-primary" onclick="saveNote()">Salvar Nota</button>
+    </div>
+
+    <!-- Página de Perfil -->
+    <div id="profilePage">
+        <img src="https://via.placeholder.com/100" alt="Foto do Usuário">
+        <h2>Perfil do Usuário</h2>
+        <p>Email: <span id="userEmail"></span></p>
+    </div>
+
+    <!-- Página de Leads -->
+    <div id="leadPage">
+        <h2>Gerenciamento de Leads</h2>
+        <table id="leadTable">
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Status</th>
+                <th>Ações</th>
+            </tr>
+            <!-- Leads serão preenchidos dinamicamente aqui -->
+        </table>
+        <button class="btn btn-primary" onclick="addLead()">Adicionar Lead</button>
+    </div>
+
+    <!-- Barra de Navegação Inferior -->
+    <div class="nav-bar">
+        <button onclick="showPage('home')">&#8962;</button> <!-- Icone de casinha -->
+        <button onclick="showPage('createNote')">&#9998;</button> <!-- Icone de bloco de notas -->
+        <button onclick="showPage('profilePage')">&#9776;</button> <!-- Icone de menu -->
+    </div>
+
+    <script>
+        // Exibir a página inicial por padrão
+        window.onload = function() {
+            showPage('home');
+            loadLeads(); // Carregar leads ao iniciar o app
+        };
+
+        // Função para alternar entre as páginas
+        function showPage(pageId) {
+            document.getElementById('home').style.display = 'none';
+            document.getElementById('loginPage').style.display = 'none';
+            document.getElementById('dashboard').style.display = 'none';
+            document.getElementById('createNote').style.display = 'none';
+            document.getElementById('profilePage').style.display = 'none';
+            document.getElementById('leadPage').style.display = 'none';
+
+            document.getElementById(pageId).style.display = 'block';
+        }
+
+        // Função de simulação de login
+        function login() {
+            var email = document.getElementById('email').value;
+            var password = document.getElement
