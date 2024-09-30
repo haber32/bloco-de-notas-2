@@ -241,66 +241,158 @@ body {
   background: url(https://design.penpot.app/assets/by-file-media-id/c04641ea-355e-80b8-8005-04cf98e7c765) no-repeat center center / cover;
   border-radius: 0px;
 }
- /* Estilos da página de login */
 
- 
- #loginPage {
-    margin: 0;
-    min-height: 100%;
-    min-width: 57%;
-    padding: 0;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(235, 226, 226);;
-}
-#loginPage input {
-    padding: 10px;
-    margin: 10px;
-    width: 80%;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-}
-.btn-login {
-    background-color: #ff69b4;
-    color: #ff7f50;
-    padding: 10px 30px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-}
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       /* Estilos gerais */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 100px;
+            text-align: center;
+        }
+        #home, #loginPage, #dashboard, #createNote, #profilePage, #leadPage {
+            display: none;
+        }
 
-/* Estilos da página de Cadastrar */
+    
+      
+        /* Estilos da página de login */
+        #loginPage {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color:rgba(178, 178, 178, 0.3);
+        }
+        #loginPage input {
+            padding: 105px;
+            margin: 5px;
+            width: 80%;
+            border-radius: 1px;
+            border: 1px solid #dacdcd;
+        }
+        .btn-login {
+            background-color: #f54a53;
+            color: #ffffff;
+            padding: 20px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
 
- 
-#loginPage {
-    margin: 0;
-    min-height: 100%;
-    min-width: 57%;
-    padding: 0;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(235, 226, 226);;
-}
-#loginPage input {
-    padding: 10px;
-    margin: 10px;
-    width: 80%;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-}
-.btn-login {
-    background-color: #f369e1;
-    color: #ff7f50;
-    padding: 10px 30px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-}
+        /* Estilos do Dashboard */
+        #dashboard {
+            background-color:rgba(178, 178, 178, 0.3);;
+            padding: 105px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #dashboard h2 {
+            margin-bottom: 20px;
+        }
+        .folder {
+            background-color:#e466d7;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 10px;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        /* Estilos da Criação de Notas */
+        #createNote {
+            background-color: rgba(178, 178, 178, 0.3);
+            height: 100vh;
+            padding: 43px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #noteInput {
+            width: 80%;
+            height: 100px;
+            margin-bottom: 20px;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        /* Estilos do Perfil */
+        #profilePage {
+            background-color: rgba(178, 178, 178, 0.3);
+            height: 100vh;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #profilePage img {
+            width: 120px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        /* Estilos da página de Leads */
+        #leadPage {
+            background-color: rgba(178, 178, 178, 0.3);
+            height: 120vh;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #leadTable {
+            width: 80%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        #leadTable th, #leadTable td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        /* Estilos da barra de navegação inferior */
+        .nav-bar {
+            position: fixed;
+            bottom: 0;
+            width: 30%;
+            display: flex;
+            justify-content: space-around;
+            background-color: #333;
+            padding: 10px 0;
+        }
+        .nav-bar button {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .nav-bar button:hover {
+            color: #ff69b4;
+        }
+
+
