@@ -49,7 +49,7 @@ body {
   overflow: hidden;
 }
 
-/* BEM VINDE! */
+/* BEM VINDO(A)! */
 .bem-vinde-06e2b3886cc4 {
   position: absolute;
   left: 23px;
@@ -57,14 +57,14 @@ body {
   width: 114px;
   height: 29px;
 }
-.bem-vinde-06e2b3886cc4 .root-0 {
+.bem-vindo-06e2b3886cc4 .root-0 {
   
   
   display: flex;
   white-space: break-spaces;
   align-items: flex-start;
 }
-.bem-vinde-06e2b3886cc4 .root-0-paragraph-set-0 {
+.bem-vindo-06e2b3886cc4 .root-0-paragraph-set-0 {
   display: inline-flex;
   flex-direction: column;
   justify-content: inherit;
@@ -72,13 +72,13 @@ body {
   margin-right: 1px;
   vertical-align: top;
 }
-.bem-vinde-06e2b3886cc4 .root-0-paragraph-set-0-paragraph-0 {
+.bem-vindo-06e2b3886cc4 .root-0-paragraph-set-0-paragraph-0 {
   font-size: 0;
   line-height: 1.2;
   margin: 0;
   text-align: left;
 }
-.bem-vinde-06e2b3886cc4 .root-0-paragraph-set-0-paragraph-0-text-0 {
+.bem-vindo-06e2b3886cc4 .root-0-paragraph-set-0-paragraph-0-text-0 {
   color: rgba(149, 134, 134, 1);
   text-transform: none;
   
